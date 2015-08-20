@@ -2363,6 +2363,12 @@
 			margin: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
+		
+		.image.left.icono {
+			max-width: 11%;
+			height: auto;
+			margin: 0 1.5em 1em 0;
+		}
 
 		.image.right {
 			float: right;
