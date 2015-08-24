@@ -7,25 +7,44 @@
         <!-- Estilo de textos de Google. Estilo de texto: Lato -->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/main.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     </head>
     <body>
-        <!--<div id="boton-menu"><a href="#">Menú</a></div>
-        <nav class="fixed-nav-bar">
-                <ul id="menu">
-                        <li>
-                                <a href="#">Menú</a>
-                                <ul>
-                                        <li><a href="#one">Uno</a></li>
-                                        <li><a href="#two">Dos</a></li>
-                                        <li><a href="#three">Tres</a></li>
-                                        <li><a href="#seven">Seven</a></li>
-                                </ul>
-                        </li>
+        <!-- Navbar -->
+        <nav role="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle glyphicon glyphicon-menu-hamburger">
+                </button>
+                <a href="#" class="navbar-brand">CGB</a>
+            </div>
+
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html#" data-target="#navbarCollapse" data-toggle="collapse">Inicio</a></li>
+                    <li><a href="#sobremi" class="scrolly" data-target="#navbarCollapse" data-toggle="collapse">Sobre mí</a></li>
+                    <li><a href="#formacionacademica" class="scrolly" data-target="#navbarCollapse" data-toggle="collapse">Formación académica</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Mis proyectos <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#">Mi web personal</a></li>
+                            <li><a href="findyourmall.html">Find Your Mall</a></li>
+                            <li><a href="#">Mas proyectos...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer" class="scrolly" data-target="#navbarCollapse" data-toggle="collapse">Footer</a></li>
                 </ul>
-        </nav>-->
+                <!--<form role="search" class="navbar-form navbar-right">
+                   <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control">
+                   </div>
+               </form>-->
+            </div>
+        </nav>
+
+
         <!-- Header -->
         <section id="header">
             <div class="inner">
@@ -34,13 +53,13 @@
                 <p style="text-align:center;">Graduado en Ingeniería Informática de Sistemas.<br />
                     (Mención en Tecnologías de la Información)</p>
                 <ul class="actions">
-                    <li><a href="#one" class="button scrolly">Descúbre más sobre mi</a></li>
+                    <li><a href="#sobremi" class="button scrolly">Descúbre más sobre mi</a></li>
                 </ul>
             </div>
         </section>
 
-        <!-- One -->
-        <section id="one" class="main style1">
+        <!-- Sobre Mi -->
+        <section id="sobremi" class="main style1">
             <div class="container">
                 <div class="row 150%">
                     <div class="6u 12u$(medium)">
@@ -59,8 +78,8 @@
             </div>
         </section>
 
-        <!-- Two -->
-        <section id="two" class="main style2">
+        <!-- Formacion Academica -->
+        <section id="formacionacademica" class="main style2">
             <div class="container">
                 <header class="major">
                     <h2>Formación Académica</h2>
@@ -82,8 +101,8 @@
             </div>
         </section>
 
-        <!-- Three -->
-        <section id="three" class="main style1 special">
+        <!-- Proyectos -->
+        <section id="proyectos" class="main style1 special">
             <div class="container">
                 <header class="major">
                     <h2>Mis proyectos</h2>
@@ -91,12 +110,12 @@
 
                 <div class="row">
                     <article class="6u 12u$(xsmall) work-item">
-                        <a href="#" class="image fit thumb ver" style="content:'Hola';"><img src="images/proyectos/miWeb.png" alt="" /></a>
+                        <a href="#" class="image fit thumb" style="content:'Hola';"><img src="images/proyectos/miWeb.png" alt="" /></a>
                         <h3>Mi página web personal</h3>
                         <p>Diseñada en base a una plantilla de HTML5 UP. Contiene diseño responsable y una información detallada de mis conocimientos y proyectos que he realizado.</p>
                     </article>
                     <article class="6u$ 12u$(xsmall) work-item">
-                        <a href="https://www.dropbox.com/s/atxm7xrqvep2o7r/FindYourMall.apk?dl=1" class="image fit thumb descargar"><img src="images/proyectos/fym.png" alt="" /></a>
+                        <a href="findyourmall.html" class="image fit thumb"><img src="images/proyectos/fym.png" alt="" /></a>
                         <h3>Find Your Mall</h3>
                         <p>Aplicación para Android desarrollada en una de las asignaturas del Grado en Ingeniería Informática.</p>
                     </article>
@@ -545,6 +564,7 @@
         <script src="assets/js/util.js"></script>
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>

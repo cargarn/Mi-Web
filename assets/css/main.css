@@ -1819,7 +1819,6 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px #666;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -2328,7 +2327,7 @@
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				content: 'Ver';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2342,14 +2341,6 @@
 				text-decoration: none;
 				top: 50%;
 				white-space: nowrap;
-			}
-			
-			.image.thumb.ver:after{
-				content: 'Ver';
-			}
-
-			.image.thumb.descargar:after{
-				content: 'Descargar';
 			}
 
 			.image.thumb:hover:after {
@@ -3552,36 +3543,12 @@
 	}
 	
 /* MIS ESTILOS */
-/*.fixed-nav-bar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	width: 100%;
-	height: 50px;
-	background-color: rgba(255,255,255,0.2);
-}*/
 
-#boton-menu {
-	margin:20px;
-	padding:10px;
-    position: fixed;
-	right:0;
-    overflow: hidden;
-	z-index:9999;
-}
-
-#boton-menu  a{
+.navbar {
+    margin-bottom: 0;
     background-color: rgba(255,255,255,0.5);
-    border: 1px solid #D2D2D2;
-    border-radius: 8px 8px 8px 8px;
-	color:#000000;
-	margin:20px;
-	padding:10px;
 }
 
-#boton-menu a:hover{
-	background-color: rgba(255,255,255,1);
-	color:#000000;
-	text-decoration:none;
+.navbar-right{
+	margin-right: 10px;
 }
