@@ -2343,6 +2343,14 @@
 				top: 50%;
 				white-space: nowrap;
 			}
+			
+			.image.thumb.ver:after{
+				content: 'Ver';
+			}
+
+			.image.thumb.descargar:after{
+				content: 'Descargar';
+			}
 
 			.image.thumb:hover:after {
 				opacity: 1.0;
