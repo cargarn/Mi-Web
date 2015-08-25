@@ -3543,10 +3543,20 @@
 	}
 	
 /* MIS ESTILOS */
-
-.navbar {
+.navbar, .dropdown-menu{
+	font-family: 'Lato', serif;
     margin-bottom: 0;
-    background-color: rgba(255,255,255,0.5);
+    color: white;
+    font-weight: 500;
+    background-color: rgba(64,95,174,0.6);
+}
+
+.navbar-header button{
+	background: white;
+}
+
+.dropdown-menu .elemento{
+	color: white;
 }
 
 .navbar-right{
