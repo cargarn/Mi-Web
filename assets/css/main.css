@@ -3562,3 +3562,8 @@
 .navbar-right{
 	margin-right: 10px;
 }
+
+#conocimientos .blanco {
+	font-family: 'Lato', serif;
+	color:white;
+}
